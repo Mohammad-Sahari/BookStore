@@ -1,0 +1,32 @@
+﻿using System.Collections.Generic;
+using BookStore.Models;
+using BookStore.Repository;
+using Microsoft.AspNetCore.Mvc;
+
+namespace BookStore.Controllers
+{
+    public class BookController : Controller
+    {
+        private readonly BookRepository _bookRepository;
+
+        public BookController(BookRepository bookRepository)
+        {
+            _bookRepository = bookRepository;
+        }
+
+        public List<BookModel> GetAllBooks()
+        {
+            return _bookRepository.GetAllBooks();
+        }
+
+        public BookModel GetBook(int id)
+        {
+            return _bookRepository.GetBookById(id);
+        }
+
+        public List<BookModel> BookSearch(string bookName, string authorName)
+        {
+            return _bookRepository.SearchBook(bookName,authorName);
+        }
+    }
+}
