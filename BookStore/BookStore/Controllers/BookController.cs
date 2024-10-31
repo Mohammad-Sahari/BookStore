@@ -14,10 +14,16 @@ namespace BookStore.Controllers
             _bookRepository = bookRepository;
         }
 
-        public List<BookModel> GetAllBooks()
+        public ViewResult GetAllBooks()
         {
-            return _bookRepository.GetAllBooks();
+            var data = _bookRepository.GetAllBooks();
+            return View(data);
         }
+
+        //public List<BookModel> GetAllBooks()
+        //{
+        //    return _bookRepository.GetAllBooks();
+        //}
 
         public BookModel GetBook(int id)
         {

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BookStore Application</title>
+    <link href="~/css/Site.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">BookStore</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home/AboutUs">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home/ContactUs">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/book/getallbooks">All Books</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<body>
+<main>
+    @RenderBody()
+</main>
+
+<footer class="border-top text-muted text-center position-fixed bottom-0 w-100">
+    <div class="container mt-2">
+        Copyright &copy; BookStore @DateTime.Now.Year
+    </div>
+</footer>
+</body>
+
+</html>
