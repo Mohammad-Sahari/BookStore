@@ -39,7 +39,12 @@ namespace BookStore
                 //{
                 //    await context.Response.WriteAsync(env.EnvironmentName);
                 //});
+
                 endpoints.MapDefaultControllerRoute();
+
+                //endpoints.MapControllerRoute(
+                //    name: "Default",
+                //    pattern: "bookapp/{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

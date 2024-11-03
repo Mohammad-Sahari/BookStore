@@ -1,11 +1,19 @@
-﻿
+﻿@using BookStore.Models
+@{
+    var BookInfo = ViewData["book"] as BookModel;
+}
 
 
 <section class="jumbotron text-center  mt-5">
 <div class="container">
-    <h1 class="text-uppercase">Welcome to the bookstore</h1>
-    <p class="lead text-muted">Lorem ipsum odor amet, consectetuer adipiscing elit. Consectetur egestas rutrum conubia egestas odio. Cursus venenatis amet erat penatibus etiam; mauris mus. Velit vel primis senectus nec eleifend pharetra mattis. Purus ultrices rhoncus est blandit cubilia diam facilisis. Mus litora tellus est libero tellus facilisis orci. Maximus iaculis leo mi primis sagittis eget.</p>
+<h1 class="text-uppercase">Welcome to the bookstore @ViewData["CustomProperty"] </h1>
+
+
+    <p class="lead text-muted">
+        Lorem ipsum odor amet, consectetuer adipiscing elit. Consectetur egestas rutrum conubia egestas odio. Cursus venenatis amet erat penatibus etiam; mauris mus. Velit vel primis senectus nec eleifend pharetra mattis. Purus ultrices rhoncus est blandit cubilia diam facilisis. Mus litora tellus est libero tellus facilisis orci. Maximus iaculis leo mi primis sagittis eget.
+    </p>
     <p>
+        
         <a href="#" class="btn btn-primary my-2">Search Books</a>
     </p>
 </div>
@@ -17,7 +25,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card mb-4 shadow-sm">
-                    <img src="images/2c6e4f5ef4b93e85cd78b57e7331948d.jpg" class="card-img-top">
+                    <img src="~/images/BookIllustration1.jpg"  class="card-img-top">
                     <div class="card-body">
                         <p class="card-text">This Section Contains Brief Info About The Book</p>
                         <div class="d-flex justify-content-between align-items-center ">
@@ -31,7 +39,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card mb-4 shadow-sm">
-                    <img src="images/original-d3ebfad62d55f9dd1f440232f29e7340.png" class="card-img-top">
+                    <img src="~/images/BookIllustration2.png" class="card-img-top">
                     <div class="card-body">
                         <p class="card-text">This Section Contains Brief Info About The Book</p>
                         <div class="d-flex justify-content-between align-items-center ">
@@ -45,7 +53,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card mb-4 shadow-sm">
-                    <img src="images/original-92a0bbbac70a5632e9632fd15686ea1f.png" class="card-img-top">
+                    <img src="~/images/BookIllustration3.png" class="card-img-top">
                     <div class="card-body">
                         <p class="card-text">This Section Contains Brief Info About The Book</p>
                         <div class="d-flex justify-content-between align-items-center ">

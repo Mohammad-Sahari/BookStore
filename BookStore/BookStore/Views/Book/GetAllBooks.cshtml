@@ -1,6 +1,8 @@
-﻿@using BookStore.Models;
+﻿
 @model IEnumerable<BookModel>
-
+@{
+    ViewData["Title"] = "All Books";
+}
 
 
 
@@ -12,13 +14,13 @@
         {
             <div class="col-md-4">
                 <div class="card mb-4 shadow-sm">
-                    <img src="~/images/original-92a0bbbac70a5632e9632fd15686ea1f.png" class="card-img-top">
+                    <img src="~/images/BookIllustration1.jpg" class="card-img-top">
                     <div class="card-body">
                         <h3 class="card-title">@book.Title</h3>
                         <p class="card-text">@book.Description</p>
                         <div class="d-flex justify-content-between align-items-center ">
                             <div class="btn-group">
-                                <a href="/book/getbook/@book.Id" class="btn btn-sm btn-outline-secondary">Click For More!</a>
+                                <a asp-controller="Book" asp-action="GetBook" asp-route-id="@book.Id"  class="btn btn-sm btn-outline-secondary">Click For More!</a>
                             </div>
                             <small class="text-muted">@book.Author</small>
                         </div>

@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\ASP.NET\\BookStore\\BookStore\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\views\\book\\getallbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\views\\book\\getallbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +26,65 @@
       "DocumentGroups": [
         {
           "DockedWidth": 235,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BookStore\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BookStore\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACAAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T12:25:53.492Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetAllBooks.cshtml",
+              "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Views\\Book\\GetAllBooks.cshtml",
+              "RelativeDocumentMoniker": "BookStore\\Views\\Book\\GetAllBooks.cshtml",
+              "ToolTip": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Views\\Book\\GetAllBooks.cshtml",
+              "RelativeToolTip": "BookStore\\Views\\Book\\GetAllBooks.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T12:57:34.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Startup.cs",
+              "RelativeDocumentMoniker": "BookStore\\Startup.cs",
+              "ToolTip": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Startup.cs",
+              "RelativeToolTip": "BookStore\\Startup.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T12:33:29.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "BookStore\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "BookStore\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T10:27:25.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"

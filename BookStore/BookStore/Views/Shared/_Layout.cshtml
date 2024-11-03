@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>BookStore Application</title>
+    <title>@ViewData["Title"] | Application</title>
     @*<link href="~/css/Site.css" rel="stylesheet" />
     <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/lib/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" />
@@ -21,16 +21,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Home/AboutUs">About</a>
+                    <a class="nav-link" asp-controller="Home" asp-action="Aboutus">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Home/ContactUs">Contact</a>
+                    <a class="nav-link" asp-controller="Home" asp-action="ContactUs">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/book/getallbooks">All Books</a>
+                    <a class="nav-link" asp-controller="Book" asp-action="GetAllBooks">All Books</a>
                 </li>
             </ul>
         </div>
