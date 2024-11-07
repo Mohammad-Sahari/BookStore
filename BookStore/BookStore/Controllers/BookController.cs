@@ -8,6 +8,8 @@ namespace BookStore.Controllers
     public class BookController : Controller
     {
         private readonly BookRepository _bookRepository;
+        [ViewData]
+        public string Title { get; set; }
 
         public BookController(BookRepository bookRepository)
         {
@@ -38,6 +40,26 @@ namespace BookStore.Controllers
         public List<BookModel> BookSearch(string bookName, string authorName)
         {
             return _bookRepository.SearchBook(bookName,authorName);
+        }
+
+        public ViewResult BookSubmit()
+        {
+            Title = "BookSubmit";
+            return View("BookSubmit");
+        }
+
+
+        [HttpPost]
+        public IActionResult BookSumbit(BookModel bookmodel)
+        {
+            Title = "BookSubmit";
+            _bookRepository.AddNewBook(bookmodel);
+            int id = _bookRepository.AddNewBook(bookmodel);
+               if (id > 0)
+            {
+                return RedirectToAction("BookSubmit");
+            }
+            return View("BookSubmit");
         }
     }
 }
