@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using BookStore.Models;
 using BookStore.Repository;
 using Microsoft.AspNetCore.Mvc;
@@ -16,9 +17,9 @@ namespace BookStore.Controllers
             _bookRepository = bookRepository;
         }
 
-        public ViewResult GetAllBooks()
+        public async Task<ViewResult> GetAllBooks()
         {
-            var data = _bookRepository.GetAllBooks();
+            var data = await _bookRepository.GetAllBooks();
             return View(data);
         }
 
@@ -42,23 +43,23 @@ namespace BookStore.Controllers
             return _bookRepository.SearchBook(bookName,authorName);
         }
 
-        public ViewResult BookSubmit()
+        public ViewResult BookSubmit(bool isSuccess = false)
         {
+            ViewBag.IsSuccess = isSuccess;
             Title = "BookSubmit";
             return View("BookSubmit");
         }
 
 
         [HttpPost]
-        public IActionResult BookSumbit(BookModel bookmodel)
+        public async Task<IActionResult> BookSumbit(BookModel bookmodel)
         {
             Title = "BookSubmit";
-            _bookRepository.AddNewBook(bookmodel);
-            int id = _bookRepository.AddNewBook(bookmodel);
+           int id = await _bookRepository.AddNewBook(bookmodel);
                if (id > 0)
-            {
-                return RedirectToAction("BookSubmit");
-            }
+               {
+                return RedirectToAction("BookSubmit", new{isSuccess = true});
+               }
             return View("BookSubmit");
         }
     }

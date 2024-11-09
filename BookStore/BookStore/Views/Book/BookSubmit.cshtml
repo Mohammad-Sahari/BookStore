@@ -4,12 +4,15 @@
 <div class="container mt-4">
     <h3 class="display-4">Submit New Book</h3>
     <hr/>
-    @*<div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>*@
+    @if (ViewBag.IsSuccess)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success!</strong> Your new book has been submitted successfully.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
     <form method="post" asp-action="BookSumbit">
 
         <div class="form-group mb-3">

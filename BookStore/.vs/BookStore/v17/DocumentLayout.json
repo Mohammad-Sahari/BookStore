@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\ASP.NET\\BookStore\\BookStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\views\\book\\booksubmit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\views\\book\\booksubmit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\repository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\repository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\helpers\\applicationmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\helpers\\applicationmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\models\\bookmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\models\\bookmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 235,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,41 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "BookStore\\Controllers\\BookController.cs",
-              "ToolTip": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Controllers\\BookController.cs",
-              "RelativeToolTip": "BookStore\\Controllers\\BookController.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAA7wDkAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T09:00:19.065Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BookRepository.cs",
-              "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Repository\\BookRepository.cs",
-              "RelativeDocumentMoniker": "BookStore\\Repository\\BookRepository.cs",
-              "ToolTip": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Repository\\BookRepository.cs",
-              "RelativeToolTip": "BookStore\\Repository\\BookRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAbAAAA",
+              "Title": "ApplicationMapper.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Helpers\\ApplicationMapper.cs",
+              "RelativeDocumentMoniker": "BookStore\\Helpers\\ApplicationMapper.cs",
+              "ToolTip": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Helpers\\ApplicationMapper.cs",
+              "RelativeToolTip": "BookStore\\Helpers\\ApplicationMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T09:41:24.943Z",
+              "WhenOpened": "2024-11-09T14:33:50.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BookSubmit.cshtml",
-              "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Views\\Book\\BookSubmit.cshtml",
-              "RelativeDocumentMoniker": "BookStore\\Views\\Book\\BookSubmit.cshtml",
-              "ToolTip": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Views\\Book\\BookSubmit.cshtml",
-              "RelativeToolTip": "BookStore\\Views\\Book\\BookSubmit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T09:13:35.537Z",
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Repository\\BookRepository.cs",
+              "RelativeDocumentMoniker": "BookStore\\Repository\\BookRepository.cs",
+              "ToolTip": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Repository\\BookRepository.cs",
+              "RelativeToolTip": "BookStore\\Repository\\BookRepository.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAYwEMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T13:57:23.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookModel.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Models\\BookModel.cs",
+              "RelativeDocumentMoniker": "BookStore\\Models\\BookModel.cs",
+              "ToolTip": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Models\\BookModel.cs",
+              "RelativeToolTip": "BookStore\\Models\\BookModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T13:51:20.542Z",
               "EditorCaption": ""
             }
           ]
