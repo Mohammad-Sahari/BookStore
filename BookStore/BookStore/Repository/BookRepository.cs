@@ -33,7 +33,7 @@ namespace BookStore.Repository
                 Description = model.Description,
                 Title = model.Title,
                 TotalPages = model.TotalPages.HasValue ? model.TotalPages.Value : 0,
-                LanguageId = model.LangId,
+                LanguageId = model.LangId,//ino az ui dare migire dige ? are dg az dropdown entekhab mishe . moshkele badi chie ? null mifreste alan neshonet midam.
                 UpdatedOn = DateTime.UtcNow
             };
             await _context.Books.AddAsync(newBook);
@@ -45,7 +45,7 @@ namespace BookStore.Repository
             //mapping manually
 
             var books = new List<BookModel>();
-            var allbooks = await _context.Books.ToListAsync();
+            var allbooks = await _context.Books.Include(x=> x.Language).ToListAsync();
             if (allbooks?.Any() == true)
             {
                 foreach (var book in allbooks)
