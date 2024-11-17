@@ -1,5 +1,5 @@
 ﻿
-@model BookModel
+@model BookStore.Models.BookModel
 @{
     ViewData["Title"] = Model.Title + " Details";
 }
@@ -70,7 +70,7 @@
             <ul class="list-group">
                 <li class="list-group-item"><span class="fw-bold">Category -</span>@Model.Category</li>
                 <li class="list-group-item"><span class="fw-bold">Total Pages -</span>@Model.TotalPages</li>
-                <li class="list-group-item"><span class="fw-bold">Language -</span>@Model.Language</li>
+                <li class="list-group-item"><span class="fw-bold">LanguageConnectionId -</span>@Model.LanguageName</li>
             </ul>
 
         </div>

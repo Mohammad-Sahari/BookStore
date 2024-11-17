@@ -18,6 +18,7 @@ namespace BookStore
         {
             services.AddDbContext<BookStoreContext>(options => options.UseSqlServer("Server=localhost;Database=BookStoreDb;Integrated Security=True;"));
             services.AddScoped<BookRepository>();
+            services.AddScoped<LanguageRepository>();
             services.AddControllersWithViews();
             services.AddAutoMapper(typeof(Startup));
 #if DEBUG
