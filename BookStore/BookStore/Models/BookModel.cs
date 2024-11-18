@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Net.Mime;
 using BookStore.Helpers;
 using System.ComponentModel;
+using Microsoft.AspNetCore.Http;
 
 
 namespace BookStore.Models
@@ -22,6 +23,10 @@ namespace BookStore.Models
         public string Category { get; set; }
         public int LangId { get; set; }
         public string LanguageName { get; set; }
+        [Display(Name ="Choose the book's cover photo")]
+        [Required(ErrorMessage ="Book's cover photo must be choosen")]
+        public IFormFile CoverPhoto { get; set; }
+        public string CoverImageUrl { get; set; }
     }
   
 }
