@@ -37,6 +37,15 @@ namespace BookStore.Repository
                 LanguageId = model.LangId,//ino az ui dare migire dige ? are dg az dropdown entekhab mishe . moshkele badi chie ? null mifreste alan neshonet midam.
                 UpdatedOn = DateTime.UtcNow
             };
+            newBook.BookGallery = new List<BookGallery>();
+            foreach(var file in model.Gallery)
+            {
+                newBook.BookGallery.Add(new BookGallery()
+                {
+                    Name = file.Name,
+                    URL = file.URL,
+                });
+            }
             await _context.Books.AddAsync(newBook);
            await _context.SaveChangesAsync();
             return newBook.Id;
@@ -87,7 +96,13 @@ namespace BookStore.Repository
                 LanguageName = book.Language.Name,
                 CoverImageUrl = book.CoverImageUrl,
                 Title = book.Title,
-                TotalPages = book.TotalPages
+                TotalPages = book.TotalPages,
+                Gallery = book.BookGallery.Select(g => new GalleryModel()
+                {
+                    Id = g.Id,
+                    Name = g.Name,
+                    URL = g.URL
+                }).ToList() 
             }).FirstOrDefaultAsync();
             //var allbooks = await _context.Books.FindAsync(id);
             //var allbooks = await _context.Books.FirstOrDefaultAsync();

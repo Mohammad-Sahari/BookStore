@@ -27,6 +27,11 @@ namespace BookStore.Models
         [Required(ErrorMessage ="Book's cover photo must be choosen")]
         public IFormFile CoverPhoto { get; set; }
         public string CoverImageUrl { get; set; }
+
+        [Display(Name = "Choose the book's cover photos")]
+        [Required(ErrorMessage = "Book's cover photos must be choosen")]
+        public IFormFileCollection GalleryFiles { get; set; }
+        public List<GalleryModel> Gallery { get; set; }
     }
   
 }
