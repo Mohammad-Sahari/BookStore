@@ -35,6 +35,7 @@ namespace BookStore.Repository
                 TotalPages = model.TotalPages.HasValue ? model.TotalPages.Value : 0,
                 CoverImageUrl = model.CoverImageUrl,
                 LanguageId = model.LangId,//ino az ui dare migire dige ? are dg az dropdown entekhab mishe . moshkele badi chie ? null mifreste alan neshonet midam.
+                BookPdfUrl = model.BookPdfUrl,
                 UpdatedOn = DateTime.UtcNow
             };
             newBook.BookGallery = new List<BookGallery>();
@@ -102,7 +103,8 @@ namespace BookStore.Repository
                     Id = g.Id,
                     Name = g.Name,
                     URL = g.URL
-                }).ToList() 
+                }).ToList(),
+                BookPdfUrl = book.BookPdfUrl,
             }).FirstOrDefaultAsync();
             //var allbooks = await _context.Books.FindAsync(id);
             //var allbooks = await _context.Books.FirstOrDefaultAsync();
