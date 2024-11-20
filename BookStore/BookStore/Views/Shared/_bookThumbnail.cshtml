@@ -1,0 +1,15 @@
+﻿@model BookModel
+
+<div class="card mb-4 shadow-sm">
+    <img src="@(string.IsNullOrEmpty(Model.CoverImageUrl) ? "/images/561dfe3e-e5f8-415c-9b26-fbdf94897722-cover.png" : Model.CoverImageUrl)" class="card-img-top img-thumbnail">
+    <div class="card-body">
+        <h3 class="card-title">@(string.IsNullOrEmpty(Model.Title) ? "Title is not availabile" : Model.Title)</h3>
+        <p class="card-text">@(string.IsNullOrEmpty(Model.Description) ? "Description is not availabile" : Model.Description)</p>
+        <div class="d-flex justify-content-between align-items-center ">
+            <div class="btn-group">
+                <a asp-controller="Book" asp-action="GetBook" asp-route-id="@Model.Id" class="btn btn-sm btn-outline-secondary">Click For More!</a>
+            </div>
+            <small class="text-muted">@(string.IsNullOrEmpty(Model.Author) ? "NA" : Model.Author)</small>
+        </div>
+    </div>
+</div>
