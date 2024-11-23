@@ -16,9 +16,10 @@ namespace BookStore
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<BookStoreContext>(options => options.UseSqlServer("Server=localhost;Database=BookStoreDb;Integrated Security=True;"));
-            services.AddScoped<BookRepository>();
-            services.AddScoped<LanguageRepository>();
+            services.AddDbContext<BookStoreContext>(options =>
+                options.UseSqlServer("Server=localhost;Database=BookStoreDb;Integrated Security=True;"));
+            services.AddScoped<IBookRepository, BookRepository>();
+            services.AddScoped<ILanguageRepository,LanguageRepository>();
             services.AddControllersWithViews();
             services.AddAutoMapper(typeof(Startup));
 #if DEBUG
@@ -40,16 +41,17 @@ namespace BookStore
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapDefaultControllerRoute();
+
                 //endpoints.MapGet("/", async context =>
                 //{
                 //    await context.Response.WriteAsync(env.EnvironmentName);
                 //});
 
-                endpoints.MapDefaultControllerRoute();
-
                 //endpoints.MapControllerRoute(
                 //    name: "Default",
                 //    pattern: "bookapp/{controller=Home}/{action=Index}/{id?}");
+
             });
         }
     }

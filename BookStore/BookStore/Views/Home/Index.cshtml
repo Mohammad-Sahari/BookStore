@@ -1,4 +1,5 @@
 ﻿@using BookStore.Models
+@inject BookStore.Repository.IBookRepository _bookRepository
 @{
     var BookInfo = ViewData["book"] as BookModel;
 }

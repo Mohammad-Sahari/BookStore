@@ -7,12 +7,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BookStore.Repository
 {
-    public class LanguageRepository
+    public class LanguageRepository : ILanguageRepository
     {
         private readonly BookStoreContext _context;
         public LanguageRepository(BookStoreContext context)
         {
-            _context = context; 
+            _context = context;
         }
         public async Task<List<LanguageModel>> GetLanguages()
         {

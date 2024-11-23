@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BookStore.Repository
 {
-    public class BookRepository
+    public class BookRepository : IBookRepository
     {
         //Dependency Injection
         private readonly BookStoreContext _context;
@@ -39,7 +39,7 @@ namespace BookStore.Repository
                 UpdatedOn = DateTime.UtcNow
             };
             newBook.BookGallery = new List<BookGallery>();
-            foreach(var file in model.Gallery)
+            foreach (var file in model.Gallery)
             {
                 newBook.BookGallery.Add(new BookGallery()
                 {
@@ -48,7 +48,7 @@ namespace BookStore.Repository
                 });
             }
             await _context.Books.AddAsync(newBook);
-           await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             return newBook.Id;
         }
         public async Task<List<BookModel>> GetAllBooks()
@@ -56,7 +56,7 @@ namespace BookStore.Repository
             //mapping manually
 
             var books = new List<BookModel>();
-            var allbooks = await _context.Books.Include(x=> x.Language).ToListAsync();
+            var allbooks = await _context.Books.Include(x => x.Language).ToListAsync();
             if (allbooks?.Any() == true)
             {
                 foreach (var book in allbooks)

@@ -13,14 +13,14 @@ namespace BookStore.Controllers
 {
     public class BookController : Controller
     {
-        private readonly BookRepository _bookRepository;
-        private readonly LanguageRepository _LanguageRepository;
+        private readonly IBookRepository _bookRepository;
+        private readonly ILanguageRepository _LanguageRepository;
         private readonly IWebHostEnvironment _webHostEnvironment;
 
         [ViewData]
         public string Title { get; set; }
 
-        public BookController(BookRepository bookRepository, LanguageRepository languageRepository, IWebHostEnvironment webHostEnvironment)
+        public BookController(IBookRepository bookRepository, ILanguageRepository languageRepository, IWebHostEnvironment webHostEnvironment)
         {
             _bookRepository = bookRepository;
             _LanguageRepository = languageRepository;
@@ -58,7 +58,7 @@ namespace BookStore.Controllers
             //var model = new BookModel();
             //model.Language = await _LanguageRepository.GetLanguages();
             //ViewBag.Language = await _LanguageRepository.GetLanguages();
-            ViewBag.Language = new SelectList(await _LanguageRepository.GetLanguages(), "Id", "Name");
+            //ViewBag.Language = new SelectList(await _LanguageRepository.GetLanguages(), "Id", "Name");
             ViewBag.IsSuccess = isSuccess;
             Title = "BookSubmit";
             //return View("BookSubmit", model);
@@ -112,7 +112,7 @@ namespace BookStore.Controllers
                 }
             }
 
-            ViewBag.Language = new SelectList(await _LanguageRepository.GetLanguages(), "Id", "Name");
+            //ViewBag.Language = new SelectList(await _LanguageRepository.GetLanguages(), "Id", "Name");
 
             return View("BookSubmit");
             //model.Language = await _LanguageRepository.GetLanguages();
