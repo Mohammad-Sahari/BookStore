@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Dynamic;
 using BookStore.Models;
+using Microsoft.Extensions.Configuration;
 
 namespace BookStore.Controllers
 {
     public class HomeController : Controller
     {
+
         [ViewData]
         public BookModel Book { get; set; }
 
