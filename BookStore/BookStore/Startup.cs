@@ -1,5 +1,6 @@
 using BookStore.Controllers;
 using BookStore.Data;
+using BookStore.Models;
 using BookStore.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,11 +33,12 @@ namespace BookStore
                 options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
 
 
-            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<BookStoreContext>();
+            services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<BookStoreContext>();
 
 
             services.AddScoped<IBookRepository, BookRepository>();
             services.AddScoped<ILanguageRepository,LanguageRepository>();
+            services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddControllersWithViews();
             services.AddAutoMapper(typeof(Startup));
 #if DEBUG
