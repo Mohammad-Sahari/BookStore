@@ -3,6 +3,7 @@ using BookStore.Data;
 using BookStore.Helpers;
 using BookStore.Models;
 using BookStore.Repository;
+using BookStore.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -40,6 +41,7 @@ namespace BookStore
             services.AddScoped<IBookRepository, BookRepository>();
             services.AddScoped<ILanguageRepository,LanguageRepository>();
             services.AddScoped<IAccountRepository, AccountRepository>();
+            services.AddScoped<IUserService, UserService>();
             services.AddControllersWithViews();
             services.AddAutoMapper(typeof(Startup));
             services.ConfigureApplicationCookie(config =>
@@ -47,6 +49,7 @@ namespace BookStore
                 config.LoginPath = "/login";
             });
             services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, ApplicationUserClaimsPrincipalFactory>();
+            
 #if DEBUG
             services.AddRazorPages().AddRazorRuntimeCompilation();
 #endif

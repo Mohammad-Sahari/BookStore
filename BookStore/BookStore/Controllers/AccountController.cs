@@ -73,5 +73,34 @@ namespace BookStore.Controllers
             await _accountRepository.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+        [Route("change-password")]
+        public  IActionResult ChangePassword() 
+        {
+        
+            return View(); 
+        }
+
+
+        [HttpPost("change-password")]
+        public async Task<IActionResult> ChangePassword(ChangePasswordModel passwordModel) 
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _accountRepository.ChangePasswordAsync(passwordModel);
+                if (result.Succeeded)
+                {
+                    ViewBag.isSuccess = true;
+                    ModelState.Clear();
+                    return View();
+                }
+
+                foreach(var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+            }
+        
+            return View(passwordModel); 
+        }
     }
 }
