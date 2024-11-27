@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Controllers
 {
-    
+
     public class AccountController : Controller
     {
         private readonly IAccountRepository _accountRepository;
@@ -19,18 +19,18 @@ namespace BookStore.Controllers
         public IActionResult Signup()
         {
             return View();
-        } 
-        
+        }
+
         [Route("signup")]
         [HttpPost]
         public async Task<IActionResult> Signup(SignUpUserModel userModel)
         {
             if (ModelState.IsValid)
             {
-              var result = await _accountRepository.CreateUserAsync(userModel);
+                var result = await _accountRepository.CreateUserAsync(userModel);
                 if (!result.Succeeded)
                 {
-                    foreach(var errorMessage in result.Errors)
+                    foreach (var errorMessage in result.Errors)
                     {
                         ModelState.AddModelError("", errorMessage.Description);
                     }
@@ -60,8 +60,14 @@ namespace BookStore.Controllers
                 }
                 ModelState.AddModelError("", "Invalid Credentials");
             }
-                    return View(userModel);
+            return View(userModel);
 
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await _accountRepository.SignOutAsync();
+            return RedirectToAction("Index", "Home");
         }
     }
 }

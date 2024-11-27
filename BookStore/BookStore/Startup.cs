@@ -41,6 +41,10 @@ namespace BookStore
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddControllersWithViews();
             services.AddAutoMapper(typeof(Startup));
+            services.ConfigureApplicationCookie(config =>
+            {
+                config.LoginPath = "/login";
+            });
 #if DEBUG
             services.AddRazorPages().AddRazorRuntimeCompilation();
 #endif
@@ -59,6 +63,7 @@ namespace BookStore
             app.UseRouting();
 
             app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
