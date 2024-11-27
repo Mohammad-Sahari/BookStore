@@ -1,5 +1,6 @@
 using BookStore.Controllers;
 using BookStore.Data;
+using BookStore.Helpers;
 using BookStore.Models;
 using BookStore.Repository;
 using Microsoft.AspNetCore.Builder;
@@ -45,6 +46,7 @@ namespace BookStore
             {
                 config.LoginPath = "/login";
             });
+            services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, ApplicationUserClaimsPrincipalFactory>();
 #if DEBUG
             services.AddRazorPages().AddRazorRuntimeCompilation();
 #endif
