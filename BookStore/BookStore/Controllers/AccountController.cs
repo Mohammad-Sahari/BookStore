@@ -36,8 +36,8 @@ namespace BookStore.Controllers
                     }
                     return View(userModel);
                 }
-                ViewBag.SuccessMessage = "Account Created Successfully";
                 ModelState.Clear();
+                return RedirectToAction("ConfirmEmail", new {email = userModel.Email});
             }
             return View();
         }
@@ -101,6 +101,51 @@ namespace BookStore.Controllers
             }
         
             return View(passwordModel); 
+        }
+
+        [HttpGet("confirm-email")]
+        public async Task<IActionResult> ConfirmEmail(string uid, string token, string email)
+        {
+            EmailConfirmModel model = new EmailConfirmModel
+            {
+                Email = email
+            };
+            if (!string.IsNullOrEmpty(uid) && !string.IsNullOrEmpty(token))
+            {
+              
+            token = token.Replace(' ', '+');
+              var result =  await _accountRepository.ConfirmEmailAsync(uid, token);
+                if (result.Succeeded)
+                {
+                    model.EmailVerified = true;
+                }
+
+            }
+
+            return View(model);
+        }
+        
+        [HttpPost("confirm-email")]
+        public async Task<IActionResult> ConfirmEmail(EmailConfirmModel emailConfirmModel)
+        {
+            var user = await _accountRepository.GetUserByEmailAsync(emailConfirmModel.Email);
+            if(user != null)
+            {
+                if (user.EmailConfirmed)
+                {
+                    emailConfirmModel.EmailVerified = true;
+                    return View(emailConfirmModel);
+                }
+                await _accountRepository.GenerateEmailConfirmationTokenAsync(user);
+                emailConfirmModel.EmailSent = true;
+                ModelState.Clear();
+
+            }
+            else
+            {
+                ModelState.AddModelError("", "Something went wrong!");
+            }
+            return View(emailConfirmModel);
         }
     }
 }
