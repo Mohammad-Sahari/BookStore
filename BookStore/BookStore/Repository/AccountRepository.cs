@@ -58,9 +58,18 @@ namespace BookStore.Repository
             }
         }
 
+        public async Task GenerateForgotPasswordTokenAsync(ApplicationUser user)
+        {
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+            if (!string.IsNullOrEmpty(token))
+            {
+                await SendForgotPasswordEmail(user, token);
+            }
+        }
+
         public async Task<SignInResult> UserSignInAsync(SignInModel userModel)
         {
-           var result = await _signInManager.PasswordSignInAsync(userModel.Email,userModel.Password, userModel.RememberMe, false);
+           var result = await _signInManager.PasswordSignInAsync(userModel.Email,userModel.Password,userModel.RememberMe,false);
             return result;
         }
 
@@ -82,6 +91,14 @@ namespace BookStore.Repository
          return await _userManager.ConfirmEmailAsync(await _userManager.FindByIdAsync(uid), token);
 
         }
+        
+        public async Task<IdentityResult> ResetPasswordAsync(ResetPassword resetPassword)
+        {
+            var user = _userManager.FindByIdAsync(resetPassword.UserId);
+            var token = resetPassword.Token;
+            var newPassword = resetPassword.NewPassword;
+            return await   _userManager.ResetPasswordAsync(await user, token, newPassword);
+        }
 
         private async Task SendConfirmationEmail(ApplicationUser user, string token)
         {
@@ -98,6 +115,23 @@ namespace BookStore.Repository
             };
 
             await _emailService.SendConfirmationEmail(options);
+        }
+        
+        private async Task SendForgotPasswordEmail(ApplicationUser user, string token)
+        {
+            var appDomain = _configuration.GetSection("Application:AppDomain").Value;
+            var emailConfirmation = _configuration.GetSection("Application:ForgotPassword").Value;
+            UserEmailOptions options = new UserEmailOptions()
+            {
+                ToEmails = new List<string>() { user.Email },
+                PlaceHolders = new List<KeyValuePair<string, string>>
+                {
+                    new KeyValuePair<string, string>("{{UserName}}", user.FirstName),
+                    new KeyValuePair<string, string>("{{Link}}", string.Format(appDomain + emailConfirmation, user.Id, token))
+                }
+            };
+
+            await _emailService.SendForgotPasswordEmail(options);
         }
 
     }
