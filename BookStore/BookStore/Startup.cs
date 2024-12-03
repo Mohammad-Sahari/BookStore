@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace BookStore
 {
@@ -63,8 +64,6 @@ namespace BookStore
                 options.Password.RequiredLength = 5;
                 options.Password.RequireUppercase = false;
                 options.SignIn.RequireConfirmedEmail = true;
-                options.SignIn.RequireConfirmedPhoneNumber = true;
-                options.SignIn.RequireConfirmedAccount = true;
             });
 
         }

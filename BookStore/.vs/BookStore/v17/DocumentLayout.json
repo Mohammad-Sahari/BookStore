@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\ASP.NET\\BookStore\\BookStore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -15,16 +27,8 @@
       "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\models\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\repository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\repository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\views\\account\\confirmemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|d:\\asp.net\\bookstore\\bookstore\\bookstore\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12449542-AF05-4738-A6CA-4C20041D8143}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 439,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ResetPassword.cshtml",
               "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Views\\Account\\ResetPassword.cshtml",
               "RelativeDocumentMoniker": "BookStore\\Views\\Account\\ResetPassword.cshtml",
@@ -74,25 +74,24 @@
               "RelativeToolTip": "BookStore\\Views\\Account\\ResetPassword.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T20:49:33.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T20:49:33.652Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Startup.cs",
               "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Startup.cs",
               "RelativeDocumentMoniker": "BookStore\\Startup.cs",
               "ToolTip": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Startup.cs",
               "RelativeToolTip": "BookStore\\Startup.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwEAAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAYwEEAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T20:35:19.306Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ConfirmEmail.cshtml",
               "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Views\\Account\\ConfirmEmail.cshtml",
               "RelativeDocumentMoniker": "BookStore\\Views\\Account\\ConfirmEmail.cshtml",
@@ -100,12 +99,11 @@
               "RelativeToolTip": "BookStore\\Views\\Account\\ConfirmEmail.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T15:17:58.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T15:17:58.164Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\appsettings.json",
               "RelativeDocumentMoniker": "BookStore\\appsettings.json",
@@ -113,38 +111,37 @@
               "RelativeToolTip": "BookStore\\appsettings.json",
               "ViewState": "AgIAAAMAAAAAAAAAAAAgwBgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-02T19:54:17.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T19:54:17.612Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "AccountRepository.cs",
               "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Repository\\AccountRepository.cs",
               "RelativeDocumentMoniker": "BookStore\\Repository\\AccountRepository.cs",
               "ToolTip": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Repository\\AccountRepository.cs",
               "RelativeToolTip": "BookStore\\Repository\\AccountRepository.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAASwEwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwEkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T14:51:07.414Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "BookStore\\Controllers\\AccountController.cs",
               "ToolTip": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Controllers\\AccountController.cs",
               "RelativeToolTip": "BookStore\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAEwD8AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAD0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T13:28:31.035Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "EmailService.cs",
               "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "BookStore\\Services\\EmailService.cs",
@@ -157,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "IAccountRepository.cs",
               "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Repository\\IAccountRepository.cs",
               "RelativeDocumentMoniker": "BookStore\\Repository\\IAccountRepository.cs",
@@ -165,12 +162,11 @@
               "RelativeToolTip": "BookStore\\Repository\\IAccountRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T13:49:21.441Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T13:49:21.441Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ResetPassword.cs",
               "DocumentMoniker": "D:\\ASP.NET\\BookStore\\BookStore\\BookStore\\Models\\ResetPassword.cs",
               "RelativeDocumentMoniker": "BookStore\\Models\\ResetPassword.cs",
@@ -178,8 +174,7 @@
               "RelativeToolTip": "BookStore\\Models\\ResetPassword.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T13:30:43.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T13:30:43.054Z"
             }
           ]
         }

@@ -64,7 +64,19 @@ namespace BookStore.Controllers
                     }
                     return RedirectToAction("Index", "Home");
                 }
+                else if (result.IsNotAllowed)
+                {
+                    ModelState.AddModelError("", "your email is not verified");
+                }
+                else if (result.IsLockedOut)
+                {
+                    ModelState.AddModelError("", "your account is locked out");
+                }
+                else
+                {
                 ModelState.AddModelError("", "Invalid Credentials");
+
+                }
             }
             return View(userModel);
 
